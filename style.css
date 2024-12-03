@@ -1,0 +1,24 @@
+.main{
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 5px 5px whitesmoke;
+    float: inline-start;
+    margin-top: 20px;
+}
+.sub-card{
+    margin-left: 180px;
+}
+.card{
+    width: 350px;
+    padding: 3px 3px;
+    margin: 5px 15px;
+    float: inline-start;
+    align-items: center ;
+}
+.img-card{
+    margin-top: 10px;
+}
+.para{
+    font-size: 12px;
+    font-weight: 200;
+}
