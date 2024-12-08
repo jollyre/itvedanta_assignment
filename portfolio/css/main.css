@@ -37,6 +37,7 @@ a:focus{
 header{
     display: flex;
     justify-content: space-between;
+    z-index: 500px;
     box-shadow: 1px 1px 1px 1px rgb(11, 11, 11);
     margin-bottom: 25px;
     background: white;
@@ -51,6 +52,7 @@ background: radial-gradient(circle, rgba(75,73,75,1) 0%, rgba(75,73,75,1) 25%, r
     font-size: 100px;
     font-weight: bolder;
     text-shadow: 1px 2px 2px 2px;
+    z-index: 500px;
 }
 
 .container h4{
@@ -108,4 +110,8 @@ h2{
 }
 .bi-linkedin:hover{
     background-color: blue;
+}
+fieldset{
+    z-index: 400px;
+    box-shadow: 1px 1px 1px 1px lightgray;
 }
