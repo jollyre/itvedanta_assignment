@@ -42,7 +42,7 @@ header{
     margin-bottom: 25px;
     background: white;
     background: rgb(75,73,75);
-background: radial-gradient(circle, rgba(75,73,75,1) 0%, rgba(75,73,75,1) 25%, rgba(35,29,32,1) 79%);
+    background: radial-gradient(circle, rgba(75,73,75,1) 0%, rgba(75,73,75,1) 25%, rgba(35,29,32,1) 79%);
 }
 .container{
     padding: 10px 10px;
@@ -53,10 +53,17 @@ background: radial-gradient(circle, rgba(75,73,75,1) 0%, rgba(75,73,75,1) 25%, r
     font-weight: bolder;
     text-shadow: 1px 2px 2px 2px;
     z-index: 500px;
+    animation-name: leBlurIn;
+    animation-duration: 3s;
+    animation-iteration-count: -1s;
+
 }
 
 .container h4{
     font-size: 40px;
+    animation-name: leSnake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 h2{
     font-size: 30px;
@@ -90,7 +97,7 @@ h2{
     margin-bottom: 10px;
 }
 .card:hover{
-    box-shadow: 2px 2px 2px 2px whitesmoke;
+    box-shadow: 2px 2px 2px 2px black;
 }
 .contacted{
     display: grid;
@@ -114,4 +121,20 @@ h2{
 fieldset{
     z-index: 400px;
     box-shadow: 1px 1px 1px 1px lightgray;
+}
+@keyframes lePeek {
+    25% {  transform: rotateX(30deg) translateY(10px) rotate(-13deg); }
+    50% { transform: translateY(-22px) rotate(3deg) scale(1.1);  }
+}
+
+@keyframes leSnake {
+    from, to { transform: translateY(0px) }
+    50% { transform: translateY(30px) }
+}
+@keyframes leBlurIn {
+    from {
+        transform: scaleX(0.2);
+        filter: blur(20px);
+        opacity: 0;
+    }
 }
