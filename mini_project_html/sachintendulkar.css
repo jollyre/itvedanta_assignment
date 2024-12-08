@@ -64,3 +64,6 @@ h4{
     background-color:  #a9cce3  ;
 
 }
+.container{
+    display: flex;
+}
