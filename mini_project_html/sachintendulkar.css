@@ -13,6 +13,32 @@ img{
 .container{
     margin-top: 10px;
 }
+a{
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+header > div{
+    display: inline;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 1px 1px lightgray;
+}
 .card{
     border: 1px solid black;
     padding: 5px 5px;
