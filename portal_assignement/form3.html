@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student|Profile</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+        table{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Create Profile</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <th><label for="name">First Name:</label></th>
+                    <td><input type="text" placeholder="First Name" name="name" id="name"  required></td>
+                </tr>
+                <tr>
+                    <th><label for="lastname">Last Name:</label></th>
+                    <td><input type="text" name="lastname" id="lastname" placeholder="Last Name" required></td>
+                </tr>
+                <tr>
+                    <th><label for="date">Date of Birth:</label></th>
+                    <td><input type="date" name="date" id="date" required></td>
+                </tr>
+                <tr>
+                    <th><label for="age">Enter age:</label></th>
+                    <td><input type="number" placeholder="Age" name="age" id="age" required></td>
+                </tr>
+                <tr>
+                    <th><label for="gender">Gender:</label></th>
+                    <td><input type="radio" name="gender" checked id="gender" required><label for="gender">Male</label> <input type="radio" name="gender" id="gender" required><label for="gender">Female</label></td>
+                </tr>
+                <tr>
+                    <th><label for="address">Address:</label></th>
+                    <td><textarea name="address" id="address" required></textarea></td>
+                </tr>
+                <tr>
+                    <th><label for="per_address">Permanent Address:</label></th>
+                    <td><textarea name="per_address" id="per_address" required></textarea></td>
+                </tr>
+            </table>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+</body>
+</html>
